@@ -21,13 +21,13 @@ const Posts = () => {
 
     useEffect(() => {
         postService.getAll().then(({data}) => setPosts(data))
-    }, []);
+    }, [postsDetails]);
 
 
     return (
         <div>
         <div className={css.Posts}>
-            {posts.map(post =><Post key={post.id} post={post} click={click()}/> )}
+            {posts.map(post =><Post key={post.id} post={post} click={click}/> )}
         </div>
             {
              postsDetails && <PostDetails postsDetails={postsDetails}/>
