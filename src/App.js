@@ -1,9 +1,10 @@
 import React from 'react';
+import {Ships} from "./ShipsConteiner/Ships/Ships";
 
 const App = () => {
     return (
         <div>
-          APP
+          <Ships/>
         </div>
     );
 };
