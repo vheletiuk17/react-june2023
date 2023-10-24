@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {commentService} from "../service/commentService";
 import {CommentForm} from "./CommentForm";
+import {Comments} from "./Comments";
 
 const CommentsConteiner = () => {
     const [comments, setComments] = useState([])
@@ -13,7 +14,7 @@ const CommentsConteiner = () => {
         <div>
             <CommentForm setComments={setComments}/>
             <hr/>
-            <CommentsConteiner/>
+            <Comments comments={comments}/>
         </div>
     );
 };

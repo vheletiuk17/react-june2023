@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form";
 import async from "async";
 import {commentService} from "../service/commentService";
 
-const CommentForm = (setComments) => {
+const CommentForm = ({setComments}) => {
     const {reset, register, handleSubmit} = useForm();
 
     const save = async(comment) =>{

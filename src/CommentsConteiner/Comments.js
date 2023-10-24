@@ -5,7 +5,7 @@ const Comments = ({comments}) => {
 
     return (
         <div>
-            {comments.map(comments =><Comment key={comments.id} comments={comments}/>)}
+            {comments.map(comment => <Comment key={comment.id} comment={comment}/>)}
         </div>
     );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Comment = ({comment}) => {
-    const {id, title, body} = comment
+    const {id, title, body} = comment;
     return (
-        <div>
+        <div style={{width: '50%'}}>
             <div>id:{id}</div>
             <div>title:{title}</div>
             <div>body:{body}</div>
