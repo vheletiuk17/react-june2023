@@ -1,9 +1,13 @@
 import React from 'react';
+import {UsersConteiner} from "./UsersContainer/UsersConteiner";
+import {CommentsConteiner} from "./CommentsConteiner/CommentsConteiner";
 
 const App = () => {
     return (
         <div>
-          APP
+            <UsersConteiner/>
+            <CommentsConteiner/>
+
         </div>
     );
 };
